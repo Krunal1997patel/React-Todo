@@ -3,6 +3,8 @@ import React,{Component} from 'react';
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
 
+import './components/TodoComponents/Todo.css'
+
 
 const data = [];
 
@@ -37,6 +39,20 @@ class App extends Component {
     })
   }
 
+  checkedOrNot = (id) => {
+    this.setState({
+      lists: this.state.lists.map(check => {
+        if(check.id === id){
+          return{
+            ...check,
+            completed: !check.completed
+          }
+        }else{
+          return check;
+        }
+      })
+    })
+  }
 
 
 
@@ -44,10 +60,10 @@ class App extends Component {
   render() {
     console.log(this.state.lists)
     return (
-      <div>
+      <div className='app'>
         <h2>Welcome to your Todo App!</h2>
         <TodoForm addList={this.addList} cleanList={this.cleanList}/>
-        <TodoList lists={this.state.lists} />
+        <TodoList lists={this.state.lists} checkedOrNot={this.checkedOrNot}/>
       </div>
     );
   }

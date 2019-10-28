@@ -13,6 +13,7 @@ const TodoList = props => {
                     id={list.id}
                     name={list.task}
                     completed={list.completed}
+                    checkedOrNot={props.checkedOrNot}
                     />
                 ))
             }

@@ -1,0 +1,16 @@
+body{
+   text-align: center;
+}
+
+ ul{
+    list-style-type: none;
+ }
+
+ .item{
+     color: black;
+ }
+
+ .item-checked{
+     color: red;
+     text-decoration: line-through;
+ }
