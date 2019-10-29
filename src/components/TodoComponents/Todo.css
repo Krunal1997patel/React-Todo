@@ -1,0 +1,89 @@
+body{
+   text-align: center;
+   font-family: sans-serif;
+   background: rgb(121,9,120);
+   background: linear-gradient(90deg, rgba(121,9,120,1) 26%, rgba(255,21,0,1) 100%);
+}
+
+ul{
+list-style-type: none;
+}
+
+h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.item{
+    color: black;
+}
+
+.item-checked{
+    color: red;
+    text-decoration: line-through;
+}
+
+.danger{
+    color: white;
+    background: #ff4f4f;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 0.5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.add{
+    color: white;
+    background: #42df4f;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 0.5% 1%;
+    border: none;
+    margin-left: 1%;
+    outline: none;
+    cursor: pointer;
+}
+
+.input{
+    border: none;
+    background: linear-gradient(90deg,#960c5f 26%, #aa0d4b 100%);
+    border-bottom: solid black 3px;
+    padding:15px 3px 10px 12px;
+    color: white;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.waring{
+    margin-top: 1%;
+    color: white;
+    background-color: #ffac15;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 0.5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.list-case{
+    margin: 0 40%;
+    padding: 0 2% 0 0;
+}
+
+.list{
+    border: 1px solid black;
+    padding: 4% 0;
+    font-size: 1.4rem;
+    background-color: #2f2f2f;
+    color: white;
+    border-radius: 25px;
+}
