@@ -54,7 +54,13 @@ class App extends Component {
     })
   }
 
+  cleanCheckIteam = () => {
+    this.setState({
+      lists: this.state.lists.filter(iteam => !iteam.completed)
+    })
+  }
 
+  
 
 
   render() {
@@ -62,8 +68,16 @@ class App extends Component {
     return (
       <div className='app'>
         <h2>Welcome to your Todo App!</h2>
-        <TodoForm addList={this.addList} cleanList={this.cleanList}/>
-        <TodoList lists={this.state.lists} checkedOrNot={this.checkedOrNot}/>
+        <TodoForm 
+          addList={this.addList}
+          cleanList={this.cleanList} 
+          cleanCheckIteam={this.cleanCheckIteam}
+        />
+        <TodoList 
+          lists={this.state.lists} 
+          checkedOrNot={this.checkedOrNot}
+        />
+        <button className='danger' onClick={this.cleanList}>Clean list</button>
       </div>
     );
   }

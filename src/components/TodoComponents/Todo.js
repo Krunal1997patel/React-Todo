@@ -8,7 +8,7 @@ const Todo = props => {
         onClick={() => props.checkedOrNot(props.id)}
         key={props.id} >
            <ul>
-               <li>{props.name}</li>
+               <li className='list'>{props.name}</li>
            </ul>
         </div>
     )

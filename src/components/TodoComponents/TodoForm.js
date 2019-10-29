@@ -30,12 +30,13 @@ class TodoForm extends React.Component{
                     type='text'
                     placeholder='List item'
                     name='list'
+                    className='input'
                     onChange={this.handleChange}
                     value={this.state.listName}
                     />
-                    <button type='submit'>Add</button>
+                    <button type='submit' className='add'>Add</button>
                 </form>
-                    <button type='submit' onClick={this.props.cleanList}>Clean list</button>
+                    <button type='submit' className='waring' onClick={this.props.cleanCheckIteam}>Clean Checked items</button>
             </div>
         )
     }
